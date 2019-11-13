@@ -15,12 +15,12 @@ class App extends React.Component {
         this.state = {
             albums : [],
             photos :[],
-            appearHome: true
+            appearPhoto: true
         };
     }
-    toggleAppear = () => {
+    photosAppear = () => {
         this.setState({
-            appearHome: !this.state.appearHome
+            appearPhoto: !this.state.appearPhoto
         })
     }
     componentDidMount() {
@@ -41,7 +41,7 @@ class App extends React.Component {
     return (
         <div className="App">
             <FadeInDiv><h1>Gallery App 🎞</h1></FadeInDiv>
-            <select className="albums" onChange={this.getPhotos.bind(this)} onSelect={() => this.toggleAppear()}>>
+            <select className="albums" onChange={this.getPhotos.bind(this)} onSelect={() => this.photosAppear()}>>
                 <option>Choose your favorite album 💗️</option>
                     {this.state.albums.map(album => {
                         return <option value={album.id} key={album.id}>
