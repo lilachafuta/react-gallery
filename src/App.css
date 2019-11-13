@@ -2,4 +2,38 @@
     width: 900px;
     margin: 0 auto;
     text-align: center;
+    color: #ffa2a2;
+    font-family: Rammetto One;
+}
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2015/03/26/10/41/nikon-691788_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.albums {
+    font-size: 20px;
+    font-family: Aclonica ;
+    font-weight: 400;
+    color: #565456;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(255, 251, 255, 0.04);
+    border-radius: .5em;
+    background: #ffd4cd;
+    height: 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+img {
+    margin: 10px;
+    border: #ffd4cd 3px double;
+}
+.fade-appear {
+    opacity: 0;
+    z-index: 1;
+}
+.fade-appear.fade-appear-active {
+    opacity: 1;
+    transition: opacity 1000ms linear;
 }
