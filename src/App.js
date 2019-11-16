@@ -31,6 +31,7 @@ class App extends React.Component {
             });
     }
     getPhotos(event) {
+        this.setState({photos: []});
         fetch(`https://jsonplaceholder.typicode.com/photos?albumId=${event.target.value}`)
             .then(res => res.json())
             .then(photos => {
