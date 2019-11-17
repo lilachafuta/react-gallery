@@ -37,3 +37,8 @@ img {
     opacity: 1;
     transition: opacity 1000ms linear;
 }
+
+.photos {
+    overflow: scroll;
+    height: 550px;
+}
